@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web bán hàng</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../img/ban_hang.png" type="image/x-icon">
+</head>
+<body>
+    <a href="./">Trang chủ</a>
+    <a href="./sanpham.html">Sản phẩm</a>
+    <a href="./thongtin.html">Thông tin</a>
+    <a href="./video_qc.html">Tìm kiếm và Video</a>
+    <a href="./lien_he.html">Liên hệ</a>
+    <hr>
+    <h2>Đăng kí nhận thông tin</h2>
+    <form action="" autocomplete="off" required>
+    <fieldset>
+        <legend><b>Thông tin khách hàng</b></legend>
+        <label> Họ và tên: <br>
+            <input type="text" name="user" id="" placeholder="Nhập tên khách hàng" required>
+        </label>
+        <br> 
+        <label> Mật khẩu: <br>
+            <input type="password" name="password" id="" required placeholder="Nhập mật khẩu" pattern="[A-Za-z0-9]{6,21}" title="Mật khẩu bao gồm các chữ cái in hoa, in thường, số từ 0-9. Mật khẩu phải có từ 6-21 kí tự">
+        </label>
+        <br>
+        <label> Giới tính: <br>
+            <input type="radio" name="1" id="" required> Nam
+            <input type="radio" name="1" id="" required> Nữ
+        </label>
+        <br> 
+        <label> Email: <br>
+            <input type="email" name="mail" id="" placeholder="ngvanA@gmail.com" required autocomplete="off">
+        </label>
+        <br> 
+
+        <label> Số điện thoại: <br>
+            <input type="tel" name="sdt" id="" required placeholder="Nhập số điện thoại" pattern="[0-9]{10,11}" title="Số điện thoại gồm các số từ 0-9 và bao gồm 10 hoặc 11 chữ số">
+        </label>
+        <br> 
+
+        <label> Khu vực: <br>
+            <select name="kv" id="" required>
+                <option value="">-Chọn khu vực-</option>
+                <option value="">Miền Bắc</option>
+                <option value="">Miền Nam</option>
+                <option value="">Miền Trung</option>
+            </select>
+        </label>
+        <br>
+        <label> Mạng xã hội <br>
+                <select name="" required>
+                    <option value="">-Chọn mạng xã hội</option>
+                    <option value="zalo">Zalo</option>
+                    <option value="fb">Facebook</option>
+                    <option value="ins">Instagram</option>
+                    <option value="tik">Tiktok</option>
+                </select>
+            
+        </label>
+        
+        <br> <br>
+            <input type="submit" value="Lưu thông tin">
+            <input type="reset" value="Nhập lại thông tin">
+        
+    </fieldset>
+    </form>
+<br>
+
+    <form>
+    <fieldset>
+        <legend><b>Thông tin sản phẩm </b></legend>
+        <label> Sản phẩm  muốn mua: <br>
+            <select name="sp" id="" required>
+                <option value="">-Chọn sản phẩm-</option>
+                <optgroup label="Điện thoại"> 
+                    <option value="ip15">Iphone 15</option>
+                    <option value="sss23">Samsung Galaxy S23</option>
+                </optgroup>
+                <optgroup label="Laptop">
+                    <option value="dell">Dell XPS 13</option>
+                    <option value="MacBook">MacBook Air M2</option>
+                </optgroup>
+                <optgroup label="Tai nghe">
+                    <option value="sony">Sony WH-1000XM5</option>
+                    <option value="quiet">Bose QuietComfort45</option>
+                </optgroup>
+                <optgroup label="Đồng hồ thông minh">
+                    <option value="garmin">Garmin Fenix 6</option>
+                    <option value="apple">Apple Watch Series 8</option>
+                </optgroup>
+            </select>
+        </label>
+        <br>
+
+        <label>Số lượng: 
+            <br><input type="number" name="number" id="" min="1" max="10" style="width: 159px"  required placeholder="Chọn SL muốn mua">
+        </label>
+        <br>
+
+        <label> Màu sắc: <br>
+            <input type="radio" name="A" id="" required> Đỏ
+            <input type="radio" name="A" id="" required> Trắng
+            <input type="radio" name="A" id="" required> Xanh dương
+        </label>
+        <br>
+        <label>Ngày mua: <br><input type="datetime-local" name="date" id="" required></label>
+        <br>
+        <br>
+        <input type="submit" value="Lưu sản phẩm">
+        <input type="reset" value="Nhập lại thông tin">
+        
+    </fieldset>
+</form>
+    <br>
+    <a href="./">Quay lại trang chủ</a>
+</body>
+</html>

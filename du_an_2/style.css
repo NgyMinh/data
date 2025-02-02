@@ -1,0 +1,19 @@
+table, td,th {
+    border: 2px black double;
+    border-collapse: collapse;
+}
+.sp, .tsp, .mota, .gia{
+    background-color: yellowgreen;
+}
+h2{
+    color:brown;
+    text-align: center;
+    text-decoration: underline;
+}
+body{
+    background-image: url(../img/cesar-couto-TIvFLeqZ4ec-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Căn chỉnh ảnh vào giữa */
+    background-attachment: fixed; /* Giữ ảnh background cố định khi cuộn trang */
+}
